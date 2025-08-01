@@ -1,0 +1,60 @@
+.header{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-between; 
+    padding: 8px;
+    color: #9499A1;
+}
+
+#header-links{
+    margin-left: auto;
+    color: #9499A1;
+}
+
+#logo{
+    border-radius: 50%;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    margin:0px;
+}
+
+.signup-card{
+    background-color: #3B82F6;
+}
+
+.header, .footer, .hero-container{
+    background-color: #1F2937;
+}
+.footer, .hero-container{
+    color: #FFF;
+}
+
+.header, .hero-container, .infobox-cntnr-cntnr,
+.quote-container, .signup-container, .footer{
+    display: flex;
+    flex-direction: row;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+.quote-container{
+    background-color: #E5E7EB;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul{
+    list-style-type: none;
+}
+
+li{
+    display: inline-block;
+    margin: 0 16px;
+}

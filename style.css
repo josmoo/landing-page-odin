@@ -1,3 +1,9 @@
+body{
+    display: flex;
+    flex-direction: column;
+    margin:0px;
+}
+
 .header{
     display: flex;
     flex-direction: row;
@@ -16,11 +22,23 @@
     border-radius: 50%;
 }
 
-body{
+/**/
+
+.hero-container{
+    align-content: center;
     display: flex;
-    flex-direction: column;
-    margin:0px;
+    flex-direction: row;
+    /**todo need to turn on word wrap**/
 }
+
+.hero-container button{
+    background-color: #3B82F6;
+    color: white;
+    border: none;
+    border-radius: 5px; /** todo needs chanigng probably**/
+}
+
+
 
 .signup-card{
     background-color: #3B82F6;

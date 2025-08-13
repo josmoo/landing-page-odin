@@ -4,12 +4,26 @@ body{
     margin:0px;
 }
 
+body > *{
+    display: flex;
+    flex-direction: row;
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-top: 6%;
+    padding-bottom: 6%;
+    font-family: "Roboto";
+}
+
+
+/*header stuff*/
 .header{
+    padding-top: 12px;
+    padding-bottom: 0px;
+
     display: flex;
     flex-direction: row;
     align-content: center;
     justify-content: space-between; 
-    padding: 8px;
     color: #9499A1;
 }
 
@@ -22,13 +36,23 @@ body{
     border-radius: 50%;
 }
 
-/**/
-
+/*hero stuff*/
 .hero-container{
     align-content: center;
     display: flex;
     flex-direction: row;
-    /**todo need to turn on word wrap**/
+    justify-content: space-between;
+    gap: 3%;
+}
+
+.hero-text{
+    width: 50%;
+    flex: 1;
+}
+
+#hero-img{
+    width: 50%;
+    flex: 1;
 }
 
 .hero-container button{
@@ -38,10 +62,69 @@ body{
     border-radius: 5px; /** todo needs chanigng probably**/
 }
 
+/*infobox stuff*/
+.infobox-cntnr-cntnr{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-self: center;
+    align-items: center;
+    
+}
+.infobox-cntnr{
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+}
+.infobox{
+    display: flex;
+    flex-direction: column;
+}
 
+/*qoute stuff*/
+.quote-container{
+    display: flex;
+    flex-direction: column;
+}
 
-.signup-card{
+#quote{
+    font-size: xx-large;
+    font-style: italic;
+}
+
+#quotee{
+    font-size: large;
+    font-weight: bold;
+    text-align: right;
+}
+
+/*signup stuff*/
+.signup-card{   
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    align-self: center;
     background-color: #3B82F6;
+    color: white;
+    width: 100%;
+    border-radius: 10px;
+    
+}
+
+.signup-card-text{
+    display: flex;
+    flex-direction: column;
+}
+
+.signup-card button{
+    background-color: transparent;
+    border-color: white;
+    color: white;
+    box-shadow: none;
+    border-radius: 10px;
+    border-width: 3px;
+    border-style: solid;
 }
 
 .header, .footer, .hero-container{
@@ -49,14 +132,6 @@ body{
 }
 .footer, .hero-container{
     color: #FFF;
-}
-
-.header, .hero-container, .infobox-cntnr-cntnr,
-.quote-container, .signup-container, .footer{
-    display: flex;
-    flex-direction: row;
-    padding-left: 15%;
-    padding-right: 15%;
 }
 
 .quote-container{
